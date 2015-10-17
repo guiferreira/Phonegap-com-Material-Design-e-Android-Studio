@@ -28,7 +28,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/mui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/mui.css" rel="stylesheet" type="text/css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />        
         <link rel="stylesheet" href="css/menu_left.css">
         
@@ -44,60 +44,80 @@
     <span onclick="btnLeftOut();" class="hide sombra-menu"></span>
     <!-- Sobra MenuLeft -->
 
-     <!-- Menu Left -->
-        <div class="ui-menu-left container-fluit">
-          <div>
-            <span onclick="btnLeftOut();" class="fa fa-chevron-left ui-menu-out"></span>
-            <div class="menu_topo_fundo">
-              <a href="index.html"><img class="menu_img" src="img/logo_guiferreiracode.png"></a>
-            </div>     
-            <ul class="menu_itens">
-              <li><a href="index.html" style="color:#2E47A5;">Home</a></li>
-              <li><a href="index.html" style="color:#2E47A5;">Ajuda</a></li>
-              <li><a href="index.html" style="color:#2E47A5;">Sobre</a></li>
-              <li><a href="index.html" style="color:#2E47A5;">Sair</a></li>
-            </ul>
-          </div>
+   <!-- Menu Left -->
+      <div class="ui-menu-left container-fluit">
+        <div>
+          <span onclick="btnLeftOut();" class="fa fa-chevron-left ui-menu-out"></span>
+          <div class="menu_topo_fundo">
+            <a href="index.html"><img class="menu_img" src="img/logo_guiferreiracode.png"></a>
+          </div>     
+          <ul class="menu_itens">
+            <li><a href="index.html" style="color:#2E47A5;">Home</a></li>
+            <li><a href="index.html" style="color:#2E47A5;">Ajuda</a></li>
+            <li><a href="index.html" style="color:#2E47A5;">Sobre</a></li>
+            <li><a href="index.html" style="color:#2E47A5;">Sair</a></li>
+          </ul>
         </div>
-        <!-- Menu Left -->
-        
-        
-    <header class="navbar-fixed-top">
-      <div class="mui-appbar" >
-        <table width="100%">
-          <tr style="vertical-align:middle;">
-            <td class="mui-appbar-height"><a onclick="btnLeft();" class="mui-btn mui-btn-primary"><i  class="fa fa-bars "></i></a><strong>AppMaterialModelo</strong></td>
-            
-            
-            <td class="mui-appbar-height" align="right">
-              
-              <div class="mui-dropdown">
-                <button class="mui-btn mui-btn-primary" data-mui-toggle="dropdown">
-                  <i class="fa fa-ellipsis-v"></i>
-                  
-                </button>
-                <ul class="mui-dropdown-menu mui-dropdown-menu-right">
-                  <li><a href="#">Menu 1</a></li>
-                  <li><a href="#">Menu 2</a></li>
-                  <li><a href="#">Menu 3</a></li>
-                  <li><a href="#">Menu 4</a></li>
-                  
-                </ul>
-              </div>
-            </td>
-          </tr>
-        </table>
+      </div>
+      <!-- Menu Left -->
 
-       
+      <!-- Appbar -->
+      <div class="container-fluit appBar_menu">
+        <a onclick="btnLeft();" class="appBar_btn_menu"><i  class="fa fa-bars "></i></a>
+        <a class="titulo-appbar" href="">AppMaterialModelo</a>
+        
+        <div class="mui-dropdown icon-esquerdo-appbar">
+          
+          <button class="btn-right-appbar" data-mui-toggle="dropdown"><i  class="fa fa-ellipsis-v" ></i></button>
+          <ul class="mui-dropdown__menu mui-dropdown__menu--right">          
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+            
+          </ul>
+        </div>
+
+      </div>
+      <!-- Appbar -->
+        
+        
+   
+    <div  class="container">
+      <br>
+      <form>
+        <legend>Cadastro de Usuário</legend>
+        <div class="mui-panel hide" id="msg"></div>
+        <div class="mui-textfield">
+          <input type="text" id="nome" class="mui-textfield__input">
+          <label class="mui-textfield__label--floating">Nome</label>
+        </div>
+        <div class="mui-textfield">
+          <input type="text" id="sobrenome" class="mui-textfield__input">
+          <label class="mui-textfield__label--floating">Sobrenome</label>
+        </div>
+        <div class="mui-textfield">
+          <input type="email" id="email" class="mui-textfield__input">
+          <label class="mui-textfield__label--floating">E-mail</label>
+        </div>        
+        <div class="mui-textfield">
+          <input type="password" id="senha" class="mui-textfield__input">
+          <label class="mui-textfield__label--floating">Senha</label>
+        </div>
+        <a onclick="form();" class="mui-btn mui-btn--raised">Salvar</a>
+        <span style="margin: 12px;" class="msg"></span>
+      </form>
+      
+    </div>  
 
 
 
 
 
         <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-        <script type="text/javascript" src="js/mui.min.js"></script>
+        <script type="text/javascript" src="js/mui.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/menuLeft.js"></script>
+        <script src="js/Controller.js"></script>
         
         
     </body>

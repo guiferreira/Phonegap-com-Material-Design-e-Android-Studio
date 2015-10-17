@@ -82,15 +82,44 @@
 .appBar_btn_menu i{    
     margin-top: 14px;
     font-size: 1.5em;
-    margin-left: 20px;
+    margin-left: 25px;
     color: #fff;
+}
+
+.titulo-appbar{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    position: absolute;
+    left: 49px;
+    top: 15px;
+}
+.titulo-appbar:hover{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
 }
 .appBar_logo{
     margin-left: 13px;
-    margin-bottom: 11px;
+    margin-bottom: 11px;    
 }
 .appBar_busca{    
     font-size: 1.5em;    
     color: #fff;
+}
+.icon-esquerdo-appbar{
+    right: 3px;
+    font-size: 23px;
+    top: 9px;
+    color: #FFF;
+    position: absolute;
+}
+.btn-right-appbar{
+    background-color: transparent;
+    border: 0;
+    width: 40px;
+    height: 32px;
 }
 /* AppBar*/
