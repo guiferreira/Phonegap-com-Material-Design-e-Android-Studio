@@ -31,8 +31,28 @@ function form(){
     return $('.msg').html(msg);
   }
  
-  $('.msg').removeClass("hide");
-  $('.msg').html("Dados enviados com sucesso!");
+ // Ajax...
+ var dados = "nome="+nome+"&sobrenome="+sobrenome+"&email="+email+"&senha="+senha;
+ var contentType = "application/x-www-form-urlencoded; charset=utf-8";
+
+  $.ajax({
+    type: "POST",
+    url: "http://localhost/Laravel/webservice_laravel_a_z/public/api/user",
+    data: dados,
+    contentType: contentType,
+    success: function(json){
+      console.log(json);
+      $('.msg').removeClass("hide");
+      $('.msg').html("Dados enviados com sucesso!");
+    },
+    error:function(json){
+      console.log(json);
+      $('.msg').removeClass("hide");
+      $('.msg').html("Erro! Dados não foram enviados");
+    }
+
+
+  });
  
 
 }
