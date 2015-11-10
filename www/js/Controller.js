@@ -56,3 +56,12 @@ function form(){
  
 
 }
+
+function escondePaginas(){
+  $("#PagLogin").hide();
+  $("#PagCadastro").hide();
+}
+function exibePagina(idPagina){
+  escondePaginas();
+  $("#"+idPagina).fadeIn("slow");
+}

@@ -1,24 +1,5 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
         <meta charset="utf-8">
@@ -31,10 +12,6 @@
         <link href="css/mui.css" rel="stylesheet" type="text/css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />        
         <link rel="stylesheet" href="css/menu_left.css">
-        
-
-       
-        
 
         
         <title>Modelo App Material Design</title>
@@ -80,9 +57,29 @@
       </div>
       <!-- Appbar -->
         
-        
-   
-    <div  class="container">
+    <!-- Login --> 
+ <div class="container" id="PagLogin">
+   <br>
+   <form>
+     <legend>Login</legend> 
+     
+     <div class="mui-textfield">
+       <input type="email" id="LoginEmail" class="mui-textfield__input">
+       <label class="mui-textfield__label--floating">E-mail</label>
+     </div> 
+     <div class="mui-textfield">
+       <input type="password" id="LoginSenha" class="mui-textfield__input">
+       <label class="mui-textfield__label--floating">Senha</label>
+     </div>
+     <a onclick="login();" class="mui-btn mui-btn--raised">Entrar</a>
+     <a onclick="exibePagina('PagCadastro');" class="mui-btn mui-btn--raised">Cadastro</a>
+     <span style="margin: 12px;" class="msg"></span>
+   </form> 
+ </div> 
+ <!-- Login -->
+
+   <!-- Pagina Cadastro -->
+    <div  class="container" id="PagCadastro" style="display:none;">
       <br>
       <form>
         <legend>Cadastro de Usuário</legend>
@@ -105,9 +102,9 @@
         </div>
         <a onclick="form();" class="mui-btn mui-btn--raised">Salvar</a>
         <span style="margin: 12px;" class="msg"></span>
-      </form>
-      
-    </div>  
+      </form>      
+    </div> 
+    <!-- Pagina Cadastro --> 
 
 
 
