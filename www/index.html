@@ -18,11 +18,11 @@
     </head>
     <body>
     <!-- Sobra MenuLeft -->
-    <span onclick="btnLeftOut();" class="hide sombra-menu"></span>
+    <span onclick="btnLeftOut();" style="display:none;" id="sombra-menu" class="sombra-menu"></span>
     <!-- Sobra MenuLeft -->
 
    <!-- Menu Left -->
-      <div class="ui-menu-left container-fluit">
+      <div id="ui-menu-left" class="ui-menu-left container-fluit">
         <div>
           <span onclick="btnLeftOut();" class="fa fa-chevron-left ui-menu-out"></span>
           <div class="menu_topo_fundo">
@@ -73,7 +73,7 @@
      </div>
      <a onclick="login();" class="mui-btn mui-btn--raised">Entrar</a>
      <a onclick="exibePagina('PagCadastro');" class="mui-btn mui-btn--raised">Cadastro</a>
-     <span style="margin: 12px;" class="msg"></span>
+     <span style="margin: 12px;" id="msgLogin" class="msg"></span>
    </form> 
  </div> 
  <!-- Login -->
@@ -101,7 +101,7 @@
           <label class="mui-textfield__label--floating">Senha</label>
         </div>
         <a onclick="form();" class="mui-btn mui-btn--raised">Salvar</a>
-        <span style="margin: 12px;" class="msg"></span>
+        <span style="margin: 12px;" id="msg" class="msg"></span>
       </form>      
     </div> 
     <!-- Pagina Cadastro --> 
@@ -110,7 +110,7 @@
 
 
 
-        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        
         <script type="text/javascript" src="js/mui.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/menuLeft.js"></script>
